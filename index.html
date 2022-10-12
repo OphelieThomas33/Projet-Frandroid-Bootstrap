@@ -9,40 +9,67 @@
     <title>Document</title>
 </head>
 <body class="bg-dark">
+    <!-- Menu de navigation -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar bg-dark text-light">
             <div class="container">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown link
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img style="width: 150px;" src="https://www.frandroid.com/wp-content/themes/humanoid-redesign/assets/images/2019-redesign/logos/frandroid.svg" alt="">
+                </a>
+                <div class="nav-item">
+                    <a href="#" class="menuAlwaysShow">Actus</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="menuAlwaysShow">Tests</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="menuAlwaysShow">Bons plans</a>
+                </div>
+                <div class="nav-item">
+                    <a href="#" class="menuAlwaysShow">Guides</a>
+                </div>
+                <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li>
+                            <hr class="dropdown-divider">
+                          </li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
                     </ul>
-                  </li>
-                </ul>
-              </div>
+                    <form class="d-flex mt-3" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <main class="container bg-dark">
+
+        <!-- Les catégories -->
         <div class="list-category text-center">
             <div class="list-item-category">
                 <div>
@@ -93,6 +120,24 @@
                 <a href="#">Wearables</a>
             </div>
         </div>
+
+        <!-- Ligne sur les French Days -->
+        <div class="row row-cols-2 row-cols-lg-4">
+            <div class="col" id="barcolorsbackground">
+                <p id="pubresponsivetitle" class="fw-bolder d-block d-lg-none text-white">French Days 2022</p>
+            </div>
+            <div class="col d-none d-lg-block">
+                <p class="title-pubbar text-white">French Days 2022</p>
+            </div>
+            <div class="col d-none d-lg-block">
+                <p class="title-pubbar text-white fw-bolder">Les meilleures offres en direct</p>
+            </div>
+            <div class="col text-danger text-end">
+                <p class="fw-bolder"><span class="badge text-bg-danger">37</span> Articles</p>
+            </div>
+        </div>
+
+
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>

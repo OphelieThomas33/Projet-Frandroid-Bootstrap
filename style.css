@@ -30,6 +30,10 @@
     --gradient-dark-radial-pink-orange: linear-gradient(45deg,rgba(251,96,117,.5) 0%,rgba(var(--color-pink-rgb),0.5) 100%,rgba(var(--color-pink-rgb),0.5) 100%);
     --gradient-dark-radial-orange-pink: linear-gradient(45deg,rgba(var(--color-orange-rgb),0.5) 0%,rgba(250,92,129,.5) 100%);
     --gradient-dark-circular-blue: linear-gradient(-135deg,rgba(146,80,251,.5) 0%,rgba(77,89,254,.5) 84%,rgba(var(--color-blue-rgb),0.5) 100%);
+   
+    /* changer la couleur text-danger */
+    --bs-danger-rgb: 255, 117, 179;
+
 }
 
 .list-category {
@@ -75,4 +79,18 @@
 
 .list-item-category:hover:after {
     width: 2rem;
+}
+
+#barcolorsbackground {
+    background-image: url(https://www.frandroid.com/wp-content/themes/humanoid-redesign/dist/svg/eecc6ea811fd19d92d88.svg);
+    background-repeat: no-repeat;
+}
+
+.text-bg-danger {
+    color: white;
+    background-color: rgb(255, 117, 179) !important; 
+}
+
+#offcanvasNavbar {
+    width: 100%;
 }
