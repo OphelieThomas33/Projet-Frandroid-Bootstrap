@@ -33,7 +33,16 @@
    
     /* changer la couleur text-danger */
     --bs-danger-rgb: 255, 117, 179;
+    --bs-success-rgb: 135, 227, 207;
+    --bs-warning-rgb: 255, 124, 37;
+}
 
+/* modifier largeur container */
+/* pour la taille XL */
+@media screen and (min-width: 1000px) {
+    .container {
+        max-width: 1000px;
+    }
 }
 
 .list-category {
@@ -93,4 +102,87 @@
 
 #offcanvasNavbar {
     width: 100%;
+}
+
+.menu-item-colored {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-item-colored::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    width: 1rem;
+    height: 2px;
+    background: var(--gradient-dark-blue);
+    transition: width 0.2s ease-in-out;
+}
+
+.menu-item-colored:hover::after {
+    width: 100%;
+    cursor: pointer;
+}
+
+.social-links i{
+    padding: 5px;
+    font-size: 25px;
+}
+
+.social-links i:hover {
+    color: rgb(255, 117, 179);
+    cursor: pointer;
+}
+
+.megamenu a {
+    color: white;
+    text-decoration: none;
+    transition: 0.15s;
+}
+
+.megamenu a:hover {
+    color: var(--color-dark-link)
+}
+
+.megamenu li {
+    list-style: none; 
+}
+
+.megamenu .megamenu-categorie {
+    margin: 15px 0;
+}
+
+.megamenu .megamenu-categorie-title {
+    color: var(--color-dark-link);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.megamenu .megamenu-categorie-title::after {
+    content: '>';
+    margin-left: 5px;
+    transition: 0.15s;
+}
+
+.megamenu .megamenu-categorie-title:hover {
+    color: white;
+}
+
+.megamenu .megamenu-categorie-title:hover::after {
+    margin-left: 10px;
+}
+
+/* Sous menu */
+.megamenu .megamenu-categorie ul li {
+    font-weight: bolder;
+}
+
+/* sous sous menu */
+.megamenu .megamenu-categorie ul li ul li {
+    font-weight: normal;  
+}
+
+.megamenu .megamenu-categorie ul li ul {
+    border-left: solid 1px gray;  
+    margin-bottom: 5px;
 }
