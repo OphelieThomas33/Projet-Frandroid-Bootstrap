@@ -289,12 +289,13 @@ h2 {
 }
 .text {
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 50%;
     transform:translate(-50%, -50%);
     opacity: 1!important;
-    width: 30rem;
+    width: 100%;
     color:white;
+    padding: 20px;
 }
 
 .article-card{
@@ -367,3 +368,16 @@ h2 {
     margin-top: -40px;
     margin-left: 300px;
 }
+
+.btn-scrolltop {
+    z-index: 1000;
+    position: fixed;
+    text-transform: uppercase;
+    bottom: 10px;
+    width: 180px;
+    left: 50%;
+    margin-left: -90px;
+    background-color: #2c3049;
+    color: #425fff;
+    box-shadow: 0.25rem 0.25rem 2rem rgba(87, 112, 255, .4);
+}   
