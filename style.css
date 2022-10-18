@@ -394,10 +394,10 @@ h2 {
         width: 100%;
     }
     .nav-item {
-        margin: 20px;
+        padding: 3px;
     }
     .nav-item a {
-        font-size: 12px;
+        font-size: 1rem;
     }
     .list-category {
         justify-content: flex-start;
@@ -409,13 +409,14 @@ h2 {
         position: relative;
         display: inline-block;
         margin-top: 0;
+        object-fit: cover;
+
     }
     
     .selection-redaction-text {
         width: 400px;
         height: 300px;
-
-        padding: 150px 15px 15px 30px;
+        padding: 140px 30px 30px 30px;
         margin-left: -300px;
         margin-top: 70px;
         display: inline-block;
@@ -449,5 +450,18 @@ h2 {
     }
     .nav-item {
         margin: 30px;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    .nav-item a{
+        font-size: 1.5em;
+    }
+} 
+
+@media (max-width: 520px) {
+    .gradient-line{
+        display: none;
     }
 }
