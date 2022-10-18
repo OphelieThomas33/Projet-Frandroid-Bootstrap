@@ -1,9 +1,11 @@
 document.addEventListener('scroll', (e) => {
-    let scrolltop = document.getElementById("scrolltop");
-    if (window.scrollY > 150) {
-        scrolltop.classlist.remove("d-none");
+    let btnScrollTop = document.getElementById("scrollTop");
+    if(window.scrollY > 150){
+        //Je veux afficher le bouton
+        btnScrollTop.style.display = "initial";
     }
-    else {
-       scrolltop.classlist.add("d-none");
-    }  
+    else{
+        //Je veux masquer le bouton
+        btnScrollTop.style.display = "none";
+    }
   });
