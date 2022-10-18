@@ -63,11 +63,18 @@
     }
 }
 
+.border-gradient {
+    background: linear-gradient(135deg,#a95fdd, #ff75b3, #ff7c6b);
+    height: 0.5rem;
+    width: 100%;
+}
+
 .list-category {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
     overflow-x: auto;
+    background:#0e0f11 !important;
 }
 
 .list-item-category img {
@@ -104,9 +111,10 @@
     transition: width 0.2s ease-in-out;
 }
 
-.list-item-category:hover:after {
+.list-item-category:hover::after {
     width: 2rem;
 }
+
 
 #barcolorsbackground {
     background-image: url(https://www.frandroid.com/wp-content/themes/humanoid-redesign/dist/svg/eecc6ea811fd19d92d88.svg);
@@ -127,17 +135,37 @@
     font-size: 20px;
 }
 
-.menu-item-colored::after {
+.nav-item::after {
     content: "";
     display: block;
     margin-top: 5px;
     width: 1rem;
     height: 2px;
-    background: var(--gradient-dark-blue);
     transition: width 0.2s ease-in-out;
 }
 
-.menu-item-colored:hover::after {
+.nav-item-tutos::after {
+    background: rgb(13, 110, 253);
+}
+
+.nav-item-bonsplans::after {
+    background: rgb(255, 124, 37);
+}
+
+.nav-item-guides::after {
+    background: rgb(135, 227, 207);
+}
+
+.nav-item-tests::after {
+    background: rgb(255, 117, 177);
+}
+
+.nav-item-actus::after {
+    background: rgb(13, 202, 240);
+}
+
+
+.nav-item:hover::after {
     width: 100%;
     cursor: pointer;
 }
@@ -472,3 +500,4 @@ h2 {
         display: none;
     }
 }
+
