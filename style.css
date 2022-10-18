@@ -453,6 +453,13 @@ h2 {
     }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+    .navbarline { 
+        width: 100%;     
+    }
+
+}
+
 @media screen and (min-width: 992px){
 
     .nav-item a{
