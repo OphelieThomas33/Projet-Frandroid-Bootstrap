@@ -210,7 +210,11 @@
 }
 
 .list-buttons {
+    display: flex;
     flex-wrap: wrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+
 }
 
 .list-buttons a {
