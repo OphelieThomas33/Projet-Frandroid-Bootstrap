@@ -381,3 +381,24 @@ h2 {
     color: #425fff;
     box-shadow: 0.25rem 0.25rem 2rem rgba(87, 112, 255, .4);
 }   
+
+@media (max-width: 768px) {
+    .navbarline {
+        width: 100%;
+    }
+    .nav-item {
+        margin: 20px;
+    }
+    .nav-item a {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbarline {
+        width: auto;
+    }
+    .nav-item {
+        margin: 30px;
+    }
+}
