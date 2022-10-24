@@ -235,6 +235,11 @@
     margin-bottom: 5px;
 }
 
+.megamenu-categorie .megamenu-categorie-content {
+    width: fit-content;
+    margin: auto;
+}
+
 .list-buttons div {
     margin: 5px;
 }
@@ -477,6 +482,8 @@ h2 {
         margin-left: 110px;
     }
 }
+
+
 
 @media screen and (min-width: 768px) {
     .navbarline {
