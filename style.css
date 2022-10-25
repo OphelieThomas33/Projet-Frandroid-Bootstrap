@@ -483,7 +483,16 @@ h2 {
     }
 }
 
+.changethemediv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.Changethemediv:hover{
+    cursor:pointer;
+}
 
 @media screen and (min-width: 768px) {
     .navbarline {
